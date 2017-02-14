@@ -2,7 +2,7 @@
 
 set -e -x
 
-echo 1
+echo 2
 
 pushd flight-school
   bundle install
