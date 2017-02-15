@@ -4,7 +4,7 @@ set -e -x
 
     apk update
     apk add wget
-    wget https://bootstrap.pypa.io/get-pip.py
+    wget https://bootstrap.pypa.io/get-pip.py --no-check-certificate
     python get-pip.py
     rm get-pip.py
     pip install awscli
