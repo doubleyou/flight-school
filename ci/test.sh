@@ -1,8 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e -x
 
 pushd flight-school
+    apk update
+    apk install wget
     wget https://bootstrap.pypa.io/get-pip.py
     python get-pip.py
     rm get-pip.py
